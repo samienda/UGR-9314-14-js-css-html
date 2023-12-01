@@ -4,25 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div>
-          <div><img src="./logo/samilogo.png" alt="samuel's logo" /></div>
-          <div><a href="./home.html">Home</a></div>
-          <div><a href="./about.html">About</a></div>
-          <div><a href="./projects.html">Projects</a></div>
-          <div><a href="./travel.html">Travel</a></div>
-          <div><a href="./hobbies.html">Hobbies</a></div>
-          <div><a href="./resume.html">resume</a></div>
+        <div class="dropdown">
+          <div>
+            <img
+              class="user-logo"
+              src="./logo/samilogo.png"
+              alt="samuel's logo"
+            />
+          </div>
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <div class="nav-link-buttons"><a href="./home.html">Home</a></div>
+            <div class="nav-link-buttons"><a href="./about.html">About</a></div>
+            <div class="nav-link-buttons">
+              <a href="./projects.html">Projects</a>
+            </div>
+            <div class="nav-link-buttons">
+              <a href="./travel.html">Travel</a>
+            </div>
+            <div class="nav-link-buttons">
+              <a href="./hobbies.html">Hobbies</a>
+            </div>
+            <div class="nav-link-buttons">
+              <a href="./resume.html">resume</a>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
     <main>
-      <div>
-        <div>
-          <img src="./photo/imageinabout.jpg" alt="project photo" />
+      <div class="projects">
+        <div class="each-project">
+          <img
+            class="projects-image"
+            src="./photo/imageinabout.jpg"
+            alt="project photo"
+          />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             saepe dolore impedit! Minus, nobis quasi.
@@ -31,8 +53,12 @@
             view
           </button>
         </div>
-        <div>
-          <img src="./photo/imageinabout.jpg" alt="project photo" />
+        <div class="each-project">
+          <img
+            class="projects-image"
+            src="./photo/imageinabout.jpg"
+            alt="project photo"
+          />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             saepe dolore impedit! Minus, nobis quasi.
@@ -41,8 +67,42 @@
             view
           </button>
         </div>
-        <div>
-          <img src="./photo/imageinabout.jpg" alt="project photo" />
+        <div class="each-project">
+          <img
+            class="projects-image"
+            src="./photo/imageinabout.jpg"
+            alt="project photo"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            saepe dolore impedit! Minus, nobis quasi.
+          </p>
+
+          <button onclick="window.location.href='https://www.youtube.com'">
+            view
+          </button>
+        </div>
+        <div class="each-project">
+          <img
+            class="projects-image"
+            src="./photo/imageinabout.jpg"
+            alt="project photo"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            saepe dolore impedit! Minus, nobis quasi.
+          </p>
+
+          <button onclick="window.location.href='https://www.youtube.com'">
+            view
+          </button>
+        </div>
+        <div class="each-project">
+          <img
+            class="projects-image"
+            src="./photo/imageinabout.jpg"
+            alt="project photo"
+          />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             saepe dolore impedit! Minus, nobis quasi.
@@ -51,30 +111,6 @@
             view
           </button>
         </div>
-        <div>
-          <img src="./photo/imageinabout.jpg" alt="project photo" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            saepe dolore impedit! Minus, nobis quasi.
-          </p>
-          <button onclick="window.location.href='https://www.youtube.com'">
-            view
-          </button>
-        </div>
-        <div>
-          <img src="./photo/imageinabout.jpg" alt="project photo" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            saepe dolore impedit! Minus, nobis quasi.
-          </p>
-          <button onclick="window.location.href='https://www.youtube.com'">
-            view
-          </button>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
       </div>
     </main>
 

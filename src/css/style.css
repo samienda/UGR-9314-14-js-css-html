@@ -1,0 +1,381 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #004643;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    color: #fffffe;
+}
+
+p,
+text,
+li,
+ul {
+    color: #abd1c6;
+}
+
+a,
+button {
+    border-radius: 5px;
+    color: #001e1d;
+    text-decoration: none;
+}
+
+button {
+    background-color: #f9bc60;
+}
+
+
+
+header {
+    width: 95%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+h2 {
+    text-align: center;
+    font-weight: 1000;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+
+.user-logo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/* footer */
+/* DROPPO */
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    transition: 1.5s ease;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    background-color: rgba(253, 253, 253, 0.473);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dropdown-content div {
+    border: 1px solid rgba(253, 253, 253, 0.473);
+    margin: 10px;
+    font-weight: 1000;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.dropbtn {
+    margin: 10px;
+    font-weight: 1000;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropbtn {
+    display: none;
+}
+
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(253, 253, 253, 0.473);
+    border-radius: 10px;
+}
+
+
+/* home page */
+/* main  */
+main {
+    color: #e8e4e6;
+    width: 95%;
+    padding: 5px;
+    margin: 0px;
+}
+
+.greeting-with-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../photo/mypicture.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    margin-top: 0px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.greeting-message {
+    text-align: center;
+    background-color: rgba(253, 253, 253, 0.473);
+    padding: 20px;
+
+
+}
+
+.greeting-message h4 {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    margin: 0;
+
+}
+
+.introduction video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction p {
+    text-align: center;
+}
+
+.home-contact {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+
+.contacts-at-home {
+    width: 50%;
+
+}
+
+.contacts-at-home a {
+    margin: 10px;
+
+}
+
+/* footer */
+footer {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+footer table,
+p {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contacts-at-home a img {
+    border-radius: 50%;
+}
+
+footer a img {
+    border-radius: 50%;
+    transform: scale(.5);
+}
+
+
+/* about page */
+
+
+.about-introduction img {
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+.education-skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.education,
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-introduction p {
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    text-indent: 20px;
+    max-width: fit-content;
+    overflow-wrap: break-word;
+}
+
+
+
+.education li {
+    font-weight: bold;
+}
+
+.education ul ul li {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.skills li {
+    font-weight: bold;
+}
+
+.skills li ul li {
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+
+.advanced {
+    color: rgb(153, 218, 153);
+}
+
+.intermediate {
+    color: orange;
+}
+
+.beginner {
+    color: red;
+}
+
+
+/* projects page  */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.each-project {
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.each-project p {
+    text-indent: 10px;
+    padding: 5px;
+}
+
+.each-project button {
+    margin-bottom: 5px;
+}
+
+.each-project button:hover {
+    color: pink;
+}
+
+.projects-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* travel page */
+
+
+
+.visted,
+.planned {
+    display: flex;
+    flex-direction: column;
+}
+
+.visted-places-inner-box,
+.planned-places-inner-box {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    text-indent: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.visted-places-inner-box figure,
+.planned-places-inner-box figure {
+    margin-inline-start: 0px;
+    margin-inline-end: 20px;
+}
+
+.visted-places-inner-box img,
+.planned-places-inner-box img {
+    max-width: 100%;
+
+
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+}
+
+
+/* hobbies page */
+
+.hobbies-box {
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-indent: 5px;
+    margin-bottom: 5px;
+}
+
+.hobbies-box img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.hobbies-box p {
+    margin: 5px;
+    text-indent: 10px;
+}
+
+.hobbies-box h3 {
+    text-align: center;
+}
+
+
+.resume-box iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.resume-box {
+    width: 100%;
+    height: 70vh;
+}
+
+
+.download {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+
+}

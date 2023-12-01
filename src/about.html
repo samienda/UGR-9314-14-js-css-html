@@ -4,24 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div>
-          <div><img src="./logo/samilogo.png" alt="samuel's logo" /></div>
-          <div><a href="./home.html">Home</a></div>
-          <div><a href="./about.html">About</a></div>
-          <div><a href="./projects.html">Projects</a></div>
-          <div><a href="./travel.html">Travel</a></div>
-          <div><a href="./hobbies.html">Hobbies</a></div>
-          <div><a href="./resume.html">resume</a></div>
+        <div class="dropdown">
+          <div>
+            <img
+              class="user-logo"
+              src="./logo/samilogo.png"
+              alt="samuel's logo"
+            />
+          </div>
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <div class="nav-link-buttons"><a href="./home.html">Home</a></div>
+            <div class="nav-link-buttons"><a href="./about.html">About</a></div>
+            <div class="nav-link-buttons">
+              <a href="./projects.html">Projects</a>
+            </div>
+            <div class="nav-link-buttons">
+              <a href="./travel.html">Travel</a>
+            </div>
+            <div class="nav-link-buttons">
+              <a href="./hobbies.html">Hobbies</a>
+            </div>
+            <div class="nav-link-buttons">
+              <a href="./resume.html">resume</a>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
     <main>
       <!--little about me introduction-->
-      <div>
+      <div class="about-introduction">
         <img src="./photo/imageinabout.jpg" alt="" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
@@ -35,8 +53,8 @@
           officiis id veniam quasi.
         </p>
       </div>
-      <div>
-        <div>
+      <div class="education-skills">
+        <div class="education">
           <h2>Educations</h2>
           <ul>
             <li>
@@ -65,14 +83,14 @@
             </li>
           </ul>
         </div>
-        <div>
-          <h2>Skils</h2>
+        <div class="skills">
+          <h2>Skills</h2>
           <div>
             <ul>
               <li>
                 python
                 <ul>
-                  <li>advanced</li>
+                  <li class="advanced">advanced</li>
                 </ul>
               </li>
             </ul>
@@ -82,7 +100,7 @@
               <li>
                 java
                 <ul>
-                  <li>intermediate</li>
+                  <li class="intermediate">intermediate</li>
                 </ul>
               </li>
             </ul>
@@ -92,7 +110,7 @@
               <li>
                 javascript
                 <ul>
-                  <li>intermediate</li>
+                  <li class="intermediate">intermediate</li>
                 </ul>
               </li>
             </ul>
@@ -102,17 +120,7 @@
               <li>
                 bootstrap
                 <ul>
-                  <li>intermediate</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                react
-                <ul>
-                  <li>beginner</li>
+                  <li class="intermediate">intermediate</li>
                 </ul>
               </li>
             </ul>
@@ -122,7 +130,17 @@
               <li>
                 django
                 <ul>
-                  <li>intermediate</li>
+                  <li class="intermediate">intermediate</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                react
+                <ul>
+                  <li class="beginner">beginner</li>
                 </ul>
               </li>
             </ul>
@@ -132,7 +150,7 @@
               <li>
                 flask
                 <ul>
-                  <li>beginner</li>
+                  <li class="beginner">beginner</li>
                 </ul>
               </li>
             </ul>
@@ -142,7 +160,7 @@
               <li>
                 C#
                 <ul>
-                  <li>beginner</li>
+                  <li class="beginner">beginner</li>
                 </ul>
               </li>
             </ul>
