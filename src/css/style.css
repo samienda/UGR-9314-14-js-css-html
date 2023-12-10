@@ -4,7 +4,11 @@ body {
     background-color: #004643;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 7px;
+}
 
 h1,
 h2,
@@ -109,7 +113,10 @@ main {
     color: #e8e4e6;
     width: 95%;
     padding: 5px;
-    margin: 0px;
+    margin: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 }
 
 .greeting-with-photo {
@@ -147,6 +154,7 @@ main {
 .introduction video {
     width: 100%;
     border-radius: 10px;
+    margin-top: 15px;
 }
 
 .introduction {
@@ -158,15 +166,26 @@ main {
     text-align: center;
 }
 
+.contact-info h3 {
+    margin-left: 20px;
+}
 .home-contact {
     display: flex;
     flex-direction: row;
     padding-left: 10px;
-    justify-content: space-between;
-}
-
-.contacts-at-home {
-    width: 50%;
+    justify-content: space-around;
+    }
+    
+    .contacts-at-home {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    
+    }
+    
+    .contacts-at-home {
+        width: 50%;
 
 }
 
@@ -292,7 +311,7 @@ footer a img {
 }
 
 .projects-image {
-    width: 100%;
+    width: 98%;
     border-radius: 10px;
 }
 
@@ -316,15 +335,23 @@ footer a img {
     border: 1px solid grey;
     border-radius: 10px;
 
-    text-indent: 10px;
     margin-bottom: 5px;
     padding-left: 10px;
+    
 }
 
 .visted-places-inner-box figure,
 .planned-places-inner-box figure {
     margin-inline-start: 0px;
     margin-inline-end: 20px;
+}
+
+.visted-places-inner-box h3, .planned-places-inner-box h3{
+    text-align: center;
+}
+
+.visted-places-inner-box p, .planned-places-inner-box p{
+    margin: 10px;
 }
 
 .visted-places-inner-box img,
@@ -348,15 +375,18 @@ footer a img {
 
 .hobbies-box img {
     width: 100%;
+    height: 20em;
     border-radius: 20px;
+    margin: 0px;
+    padding: 0px;
 }
 
-.hobbies-box p {
+.hobbies-box div p {
     margin: 5px;
     text-indent: 10px;
 }
 
-.hobbies-box h3 {
+.hobbies-box div   h3 {
     text-align: center;
 }
 
@@ -378,4 +408,60 @@ footer a img {
     justify-content: center;
     margin-top: 1px;
 
+}
+@media (min-width: 470px) {
+    .introduction {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-pages-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .skills-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .education,
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .about-introduction {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* align-items: center; */
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+
+    .each-project {
+        max-width: 30%;
+    }
+
+    
+    .visted-places-inner-box,
+    .planned-places-inner-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+    } 
+
+    .hobbies-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
