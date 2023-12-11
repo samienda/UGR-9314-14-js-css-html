@@ -7,30 +7,30 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="dropdown">
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__dropdown">
           <div>
             <img
-              class="user-logo"
-              src="./logo/samilogo.png"
+              class="nav__user-logo"
+              class="footer__social-media-icon" src="./logo/samilogo.png"
               alt="samuel's logo"
             />
           </div>
-          <button class="dropbtn">Menu</button>
-          <div class="dropdown-content">
-            <div class="nav-link-buttons"><a href="./home.html">Home</a></div>
-            <div class="nav-link-buttons"><a href="./about.html">About</a></div>
-            <div class="nav-link-buttons">
+          <button class="nav__menu-button">Menu</button>
+          <div class="nav__dropdown-content">
+            <div class="nav__link-buttons"><a href="./home.html">Home</a></div>
+            <div class="nav__link-buttons"><a href="./about.html">About</a></div>
+            <div class="nav__link-buttons">
               <a href="./projects.html">Projects</a>
             </div>
-            <div class="nav-link-buttons">
+            <div class="nav__link-buttons">
               <a href="./travel.html">Travel</a>
             </div>
-            <div class="nav-link-buttons">
+            <div class="nav__link-buttons">
               <a href="./hobbies.html">Hobbies</a>
             </div>
-            <div class="nav-link-buttons">
+            <div class="nav__link-buttons">
               <a href="./resume.html">resume</a>
             </div>
           </div>
@@ -39,70 +39,70 @@
     </header>
     <main>
       <div class="resume-box">
-        <iframe  src="../pdf/Resume.pdf" ></iframe><br />
+        <iframe class="resume-box__iframe" src="../pdf/Resume.pdf" ></iframe><br />
 
-        <div class="download">
-          <button><a href="./pdf/Resume.pdf" download="samiCv.pdf">download</a></button>
+        <div class="resume-box__download">
+          <button class="resume-box__download__button"><a href="./pdf/Resume.pdf" download="samiCv.pdf">download</a></button>
         </div>
       </div>
     </main>
 
-    <footer>
+    <footer class="footer">
       <!--descriptions of each page-->
-      <div class="footer-pages-info">
-        <div>
-          <h4>About</h4>
-          <ul>
+      <div class="footer__pages-info">
+        <div class="footer__page-info">
+          <h4 class="footer__page-title">About</h4>
+          <ul class="footer__page-unordered-list">
             <li>educations</li>
             <li>skills</li>
           </ul>
         </div>
-        <div>
-          <h4>Projects</h4>
-          <ul>
+        <div class="footer__page-info">
+          <h4 class="footer__page-title">Projects</h4>
+          <ul class="footer__page-unordered-list">
             <li>machine learning</li>
             <li>python</li>
             <li>weather app</li>
             <li>web scraper</li>
           </ul>
         </div>
-        <div>
-          <h4>Travel</h4>
-          <ul>
+        <div class="footer__page-info">
+          <h4 class="footer__page-title">Travel</h4>
+          <ul class="footer__page-unordered-list">
             <li>visited places</li>
             <li>planned to visit</li>
           </ul>
         </div>
       </div>
       <!--social media accounts-->
-      <div>
+      <div class="footer__social-media">
         <table>
           <tr>
             <td>
               <a href="https://www.linkedin.com" target="_blank"
-                ><img src="./logo/linkedin.png" alt="linkedin logo"
+                ><img class="footer__social-media-icon" src="./logo/linkedin.png" alt="linkedin logo"
               /></a>
             </td>
             <td>
               <a href="https://www.instagram.com" target="_blank"
-                ><img src="./logo/instagram.png" alt="instagram logo"
+                ><img class="footer__social-media-icon" src="./logo/instagram.png" alt="instagram logo"
               /></a>
             </td>
             <td>
               <a href="https://www.facebook.com" target="_blank"
-                ><img src="./logo/facebook.png" alt="facebook logo"
+                ><img class="footer__social-media-icon" src="./logo/facebook.png" alt="facebook logo"
               /></a>
             </td>
             <td>
               <a href="https://www.github.com" target="_blank"
-                ><img src="./logo/github.png" alt="github logo"
+                ><img class="footer__social-media-icon" src="./logo/github.png" alt="github logo"
               /></a>
             </td>
           </tr>
         </table>
       </div>
       <!--copy rights and credit of designer-->
-      <div><p>designed by samuelendale</p></div>
+      <div class="footer__credits"><p>designed by samuelendale</p></div>
     </footer>
   </body>
 </html>

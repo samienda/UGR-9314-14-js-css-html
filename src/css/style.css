@@ -38,7 +38,7 @@ button {
 
 
 
-header {
+.header {
     margin: auto;
     padding-left: 5px;
     padding-right: 5px;
@@ -55,7 +55,7 @@ h3 {
 }
 
 
-.user-logo {
+.nav__user-logo {
     border-radius: 50%;
     width:  40px;
     height: 40px;
@@ -63,19 +63,15 @@ h3 {
 
 /* footer */
 /* DROPPO */
-.dropdown-content {
+.nav__dropdown-content {
     display: flex;
     flex-direction: row;
     justify-content: end;
     
 }
-.dropbtn {
-    display: none;
-}
 
 
-
-.nav-link-buttons {
+.nav__link-buttons {
     border: 1px solid rgba(253, 253, 253, 0.473);
     margin: 10px;
     font-weight: 1000;
@@ -84,7 +80,8 @@ h3 {
     border-radius: 10px;
 }
 
-.dropbtn {
+.nav__menu-button {
+    display: none;
     font-weight: 1000;
     text-align: center;
     padding: 5px;
@@ -93,7 +90,7 @@ h3 {
 
 
 
-.dropdown {
+.nav__dropdown {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,8 +98,9 @@ h3 {
     border-radius: 10px;
 }
 
-/* home page */
+
 /* main  */
+
 main {
     color: #e8e4e6;
     padding: 5px;
@@ -112,6 +110,10 @@ main {
     justify-content: center;
     flex-direction: column;
 }
+
+
+/* home page */
+
 
 .greeting-with-photo {
     display: flex;
@@ -129,7 +131,7 @@ main {
     border-radius: 10px;
 }
 
-.greeting-message {
+.greeting-with-photo__message {
     text-align: center;
     background-color: rgba(253, 253, 253, 0.473);
     padding: 20px;
@@ -137,7 +139,7 @@ main {
 
 }
 
-.greeting-message h4 {
+.greeting-with-photo__message h4 {
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
@@ -145,7 +147,7 @@ main {
 
 }
 
-.introduction video {
+.introduction__video video{
     width: 100%;
     border-radius: 10px;
     margin-top: 15px;
@@ -156,40 +158,46 @@ main {
     flex-direction: column;
 }
 
-.introduction p {
+.introduction__text p{
     text-align: center;
 }
 
-.contact-info h3 {
+.contact-info h3{
     margin-left: 20px;
 }
-.home-contact {
+
+
+.contact-info__details {
     display: flex;
     flex-direction: row;
     padding-left: 10px;
     justify-content: space-around;
-    }
+}
     
-    .contacts-at-home {
+.contact-info__social-links {
         width: 50%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
-    
-    }
-    
-    .contacts-at-home {
-        width: 50%;
-
+        justify-items: center;        
 }
+    
 
-.contacts-at-home a {
+.contact-info__social-links a {
     margin: 10px;
 
 }
 
+
+.contact-info__social-links a img {
+    border-radius: 50%;
+}
+
+
+
+
+
 /* footer */
-footer {
+.footer {
     display: flex;
     flex-direction: column;
 
@@ -197,6 +205,27 @@ footer {
     margin: auto;
 }
 
+.footer__pages-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__page-info{
+    margin-right: 20px;
+}
+
+.footer__page-title{
+    color: #fffffe;
+}
+
+.footer__page-unordered-list{
+    color: #abd1c6;
+}
+
+.footer__social-media-icon{
+    border-radius: 50%;
+    transform: scale(0.5);
+}
 footer table,
 p {
     display: flex;
@@ -204,20 +233,20 @@ p {
 }
 
 
-.contacts-at-home a img {
-    border-radius: 50%;
+.footer__credits{
+    display: flex;
+    justify-content: center;
+    color: #abd1c6;
 }
 
-footer a img {
-    border-radius: 50%;
-    transform: scale(.5);
-}
+
 
 
 /* about page */
 
 
-.about-introduction img {
+
+.about-introduction__image {
     width: 100%;
     height: 100%;
 
@@ -229,13 +258,13 @@ footer a img {
     flex-direction: column;
 }
 
-.education,
-.skills {
+.education-skills__education,
+.education-skills__skills {
     display: flex;
     flex-direction: column;
 }
 
-.about-introduction p {
+.about-introduction__text{
     text-align: left;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -246,20 +275,17 @@ footer a img {
 
 
 
-.education li {
+.education-skills__education li, .education-skills__skills li {
     font-weight: bold;
 }
 
-.education ul ul li {
+.education-skills__education ul ul li {
     font-style: normal;
     font-weight: normal;
 }
 
-.skills li {
-    font-weight: bold;
-}
 
-.skills li ul li {
+.education-skills__skills li ul li {
     font-style: italic;
     font-weight: normal;
 }
@@ -286,27 +312,27 @@ footer a img {
     flex-direction: column;
 }
 
-.each-project {
+.projects__each-project {
     border: 1px solid grey;
     border-radius: 10px;
     margin: 5px;
     text-align: center;
 }
 
-.each-project p {
+.projects__each-project__text {
     text-indent: 10px;
     padding: 5px;
 }
 
-.each-project button {
+.projects__each-project__button {
     margin-bottom: 5px;
 }
 
-.each-project button:hover {
+.projects__each-project__button:hover .projects__each-project__button {
     color: pink;
 }
 
-.projects-image {
+.projects__each-project__image {
     width: 98%;
     border-radius: 10px;
 }
@@ -316,14 +342,14 @@ footer a img {
 
 
 
-.visted,
-.planned {
+.visted-places,
+.planned-places {
     display: flex;
     flex-direction: column;
 }
 
-.visted-places-inner-box,
-.planned-places-inner-box {
+.visted-places__inner-box,
+.planned-places__inner-box {
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -336,30 +362,26 @@ footer a img {
     padding-bottom: 20px;
    }
 
-.visted-places-inner-box img,
-.planned-places-inner-box  img {
+.visted-places__inner-box__image,
+.planned-places__inner-box__image {
     margin-inline-start: 0px;
     margin-inline-end: 20px;
     height: 100%;
-}
-
-.visted-places-inner-box h3, .planned-places-inner-box h3{
-    text-align: center;
-}
-
-.visted-places-inner-box p, .planned-places-inner-box p{
-    margin: 10px;
-}
-
-.visted-places-inner-box img,
-.planned-places-inner-box img {
     max-width: 100%;
-    height: 100%;
-
-
     border-radius: 10px;
     border: 1px solid lightgrey;
 }
+
+
+.visted-places__inner-box__message h3, .planned-places__inner-box__message h3{
+    text-align: center;
+}
+
+.visted-places__inner-box__message p, .planned-places__inner-box__message p{
+    margin: 10px;
+}
+
+
 
 
 /* hobbies page */
@@ -371,7 +393,7 @@ footer a img {
     margin-bottom: 5px;
 }
 
-.hobbies-box img {
+.hobbies-box__image {
     width: 100%;
     height: 20em;
     border-radius: 20px;
@@ -379,12 +401,12 @@ footer a img {
     padding: 0px;
 }
 
-.hobbies-box div p {
+.hobbies-box__text p {
     margin: 5px;
     text-indent: 10px;
 }
 
-.hobbies-box div   h3 {
+.hobbies-box__text h3 {
     text-align: center;
 }
 
@@ -401,7 +423,7 @@ footer a img {
 }
 
 
-.download {
+.resume-box__download {
     display: flex;
     justify-content: center;
     margin-top: 1px;
@@ -414,19 +436,19 @@ footer a img {
     }
 
 
-    .footer-pages-info {
+    .footer__pages-info {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
     }
 
-    .skills-content {
+    .education-skills__skills__content {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .education,
-    .skills {
+    .education-skills__education,
+    .education-skills__skills {
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
@@ -446,17 +468,16 @@ footer a img {
         
     }
 
-    .each-project {
+    .projects__each-project {
         max-width: 30%;
     }
 
     
-    .visted-places-inner-box,
-    .planned-places-inner-box {
+    .visted-places__inner-box,
+    .planned-places__inner-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-
     } 
 
     .hobbies-box{
@@ -470,16 +491,16 @@ footer a img {
 }
 
 @media (max-width: 470px){
-    .dropdown-content {
+    .nav__dropdown-content {
         display: none;
     }
 
-    .dropbtn {
+    .nav__menu-button {
         display: block;
     }
 
     
-    .dropdown:hover .dropdown-content {
+    .nav__dropdown:hover .nav__dropdown-content {
         transition: 1.5s ease;
         display: flex;
         flex-direction: column;
@@ -488,7 +509,7 @@ footer a img {
         width: 100%;
         border-radius: 10px;
     }
-    .dropdown:hover .dropbtn {
+    .nav__dropdown:hover .nav__menu-button {
         display: none;
     }
     
@@ -496,7 +517,7 @@ footer a img {
 }
 
 @media (min-width: 470px) and (max-width:600px){
-    .nav-link-buttons{
+    .nav__link-buttons{
         margin: 1px;
     }
 }
