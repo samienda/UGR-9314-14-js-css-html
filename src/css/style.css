@@ -133,10 +133,7 @@ main {
 
 .greeting-with-photo__message {
     text-align: center;
-    background-color: rgba(253, 253, 253, 0.473);
     padding: 20px;
-
-
 }
 
 .greeting-with-photo__message h4 {
@@ -145,6 +142,20 @@ main {
     font-size: x-large;
     margin: 0;
 
+}
+
+#cursor {
+    color: #abd1c6;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
 }
 
 .introduction__video video{
@@ -521,3 +532,56 @@ p {
         margin: 1px;
     }
 }
+
+
+
+
+.about-introduction, .education-skills{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.about-introduction.in-view, .education-skills.in-view{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.projects__each-project {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;  
+}  
+
+.projects__each-project.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.visted-places__inner-box,
+.planned-places__inner-box {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.visted-places__inner-box.in-view,
+.planned-places__inner-box.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.hobbies-box{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.hobbies-box.in-view{
+    opacity: 1;
+    transform: translateY(0);
+}
+
